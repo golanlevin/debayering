@@ -3,17 +3,21 @@
 //--------------------------------------------------------------
 void ofApp::setup() {
 	
-	shader.load("shadersGL2/shader");
+	if (ofIsGLProgrammableRenderer()){
+		shader.load("shadersGL3/shader");
+	} else {
+		shader.load("shadersGL2/shader");
+	}
+
     img.load("bayer-raw.png");
 
-	plane.set(img.getWidth(), img.getHeight()); //1280, 720);
+	plane.set(img.getWidth(), img.getHeight());
     plane.mapTexCoords(0, 0, img.getWidth(), img.getHeight());
 }
 
 
 //--------------------------------------------------------------
 void ofApp::update() {
-    
 }
 
 //--------------------------------------------------------------
@@ -36,45 +40,36 @@ void ofApp::draw() {
 
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key){
-    
 }
 
 //--------------------------------------------------------------
 void ofApp::keyReleased(int key){
-
 }
 
 //--------------------------------------------------------------
 void ofApp::mouseMoved(int x, int y){
-    
 }
 
 //--------------------------------------------------------------
 void ofApp::mouseDragged(int x, int y, int button){
-
 }
 
 //--------------------------------------------------------------
 void ofApp::mousePressed(int x, int y, int button){
-
 }
 
 //--------------------------------------------------------------
 void ofApp::mouseReleased(int x, int y, int button){
-
 }
 
 //--------------------------------------------------------------
 void ofApp::windowResized(int w, int h){
-
 }
 
 //--------------------------------------------------------------
 void ofApp::gotMessage(ofMessage msg){
-
 }
 
 //--------------------------------------------------------------
-void ofApp::dragEvent(ofDragInfo dragInfo){ 
-
+void ofApp::dragEvent(ofDragInfo dragInfo){
 }

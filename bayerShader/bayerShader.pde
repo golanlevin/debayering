@@ -14,6 +14,7 @@
 //    https://github.com/rasmus25/debayer-rpi/blob/master/demosaic.frg
 //    http://casual-effects.com/research/McGuire2009Bayer/index.html
 //    https://forum.openframeworks.cc/t/solved-ofvideograbber-with-bayer8-pixelformat/15822
+//    https://hal.archives-ouvertes.fr/hal-00683233/document
 
 
 PShader texShader;
@@ -25,7 +26,7 @@ void setup() {
   noStroke();
 
   bayerRawImage = loadImage("bayer-raw.png"); 
-  texShader = loadShader("shader.frag");
+  texShader = loadShader("shaderEdgeAware.frag"); //or shaderBilinear.frag
   texturedRect = createTexturedRect(bayerRawImage);
 }
 

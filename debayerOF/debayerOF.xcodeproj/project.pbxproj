@@ -42,10 +42,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		3B13015A20FE53AA00CB6515 /* shader.vert */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = shader.vert; sourceTree = "<group>"; };
-		3B13015B20FE53AA00CB6515 /* shader.frag */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = shader.frag; sourceTree = "<group>"; };
-		3B13015D20FE53AB00CB6515 /* shader.vert */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = shader.vert; sourceTree = "<group>"; };
-		3B13015E20FE53AB00CB6515 /* shader.frag */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = shader.frag; sourceTree = "<group>"; };
+		3BB6E46B2100F0E600FCF92E /* shaderEdgeAware.frag */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = shaderEdgeAware.frag; sourceTree = "<group>"; };
+		3BB6E46C2100F1F600FCF92E /* shaderEdgeAware.vert */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = shaderEdgeAware.vert; sourceTree = "<group>"; };
+		3BB6E46D2100F1FD00FCF92E /* shaderBilinear.frag */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = shaderBilinear.frag; sourceTree = "<group>"; };
+		3BB6E46E2100F1FD00FCF92E /* shaderBilinear.vert */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = shaderBilinear.vert; sourceTree = "<group>"; };
+		3BB6E46F2100F48E00FCF92E /* shaderBilinear.frag */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = shaderBilinear.frag; sourceTree = "<group>"; };
+		3BB6E4702100F48E00FCF92E /* shaderBilinear.vert */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = shaderBilinear.vert; sourceTree = "<group>"; };
+		3BB6E4712101770D00FCF92E /* shaderEdgeAware.frag */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = shaderEdgeAware.frag; sourceTree = "<group>"; };
+		3BB6E4722101770D00FCF92E /* shaderEdgeAware.vert */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = shaderEdgeAware.vert; sourceTree = "<group>"; };
 		E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openFrameworksLib.xcodeproj; path = ../../../libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj; sourceTree = SOURCE_ROOT; };
 		E4B69B5B0A3A1756003C02F2 /* debayerOFDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = debayerOFDebug.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4B69E1D0A3A1BDC003C02F2 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
@@ -71,8 +75,10 @@
 		3B13015920FE53AA00CB6515 /* shadersGL2 */ = {
 			isa = PBXGroup;
 			children = (
-				3B13015A20FE53AA00CB6515 /* shader.vert */,
-				3B13015B20FE53AA00CB6515 /* shader.frag */,
+				3BB6E46D2100F1FD00FCF92E /* shaderBilinear.frag */,
+				3BB6E46E2100F1FD00FCF92E /* shaderBilinear.vert */,
+				3BB6E46B2100F0E600FCF92E /* shaderEdgeAware.frag */,
+				3BB6E46C2100F1F600FCF92E /* shaderEdgeAware.vert */,
 			);
 			name = shadersGL2;
 			path = bin/data/shadersGL2;
@@ -81,8 +87,10 @@
 		3B13015C20FE53AB00CB6515 /* shadersGL3 */ = {
 			isa = PBXGroup;
 			children = (
-				3B13015D20FE53AB00CB6515 /* shader.vert */,
-				3B13015E20FE53AB00CB6515 /* shader.frag */,
+				3BB6E46F2100F48E00FCF92E /* shaderBilinear.frag */,
+				3BB6E4702100F48E00FCF92E /* shaderBilinear.vert */,
+				3BB6E4712101770D00FCF92E /* shaderEdgeAware.frag */,
+				3BB6E4722101770D00FCF92E /* shaderEdgeAware.vert */,
 			);
 			name = shadersGL3;
 			path = bin/data/shadersGL3;

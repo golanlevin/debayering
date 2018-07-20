@@ -4,9 +4,9 @@
 void ofApp::setup() {
 	
 	if (ofIsGLProgrammableRenderer()){
-		shader.load("shadersGL3/shader");
+		shader.load("shadersGL3/shaderEdgeAware"); //or shaderBilinear
 	} else {
-		shader.load("shadersGL2/shader");
+		shader.load("shadersGL2/shaderEdgeAware"); //or shaderBilinear
 	}
 
     img.load("bayer-raw.png");
